@@ -1,0 +1,60 @@
+//maximum between two number using conditional operator.
+#include <stdio.h>
+ int main()
+ {
+     int a,b;
+     scanf("%d",&a);
+     scanf("%d",&b);
+    (a>b)?(printf("%d",a)):(printf("%d",b));
+     return 0;
+}
+
+
+//to find the maximum number among three number.
+#include <stdio.h>
+ int main()
+ {
+     int a,b,c;
+     scanf("%d",&a);
+     scanf("%d",&b);
+     scanf("%d",&c);
+     ((a>b) && (a>c))?(printf("%d",a)):((b>a) && (b>c))?(printf("%d",b)):(printf("%d",c));
+     return 0;
+}
+
+
+//to check number is even or odd.
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    (a%2==0)?(printf("even")):(printf("odd"));
+
+    return 0;
+}
+
+
+//to check year is leap year or not.
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    ((a%4==0) || (a%400==0))?(printf("leap year")):(printf("not leap year"));
+
+    return 0;
+}
+
+
+//to check character is alphabet or not.
+#include <stdio.h>
+ int main()
+ {
+     char ch;
+     scanf("%c",&ch);
+     ((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))?(printf("alphabet")):(printf("not an alphabet"));
+     return 0;
+}
