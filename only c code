@@ -1,0 +1,2106 @@
+/**************************
+    
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+***************************/
+
+
+#include <stdio.h>
+int main() {
+  float a;
+
+  printf("Enter a length in centimeters: ");
+  scanf("%f", &a);
+
+ 
+
+  printf("Length in meters: %f m\n", a/100);
+  printf("Length in kilometers: %f km\n", a/100000);
+
+  return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("enter the base:");
+    scanf("%f",&a);
+    printf("enter the power:");
+    scanf("%f",&b);
+    c=pow(a,b);
+    printf("the answer is:%f",c);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b;
+    
+    printf("enter the number:");
+    scanf("%f",&a);
+    if(a>0){
+    
+    b=sqrt(a);
+    printf("the square root of %f : %f ",a,b);
+    return 0;
+    }
+    else{
+    printf("The number is less than 0 ,please enter a number greater than 0.");
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the first angle in degree:");
+    scanf("%d",&a);
+    printf("Enter the second angle in degree:");
+    scanf("%d",&b);
+    if(a!=0,b!=0)
+    {
+    c=180-a-b;
+    printf("the value of third angle in degree:%d",c);
+    }
+    else{
+    printf("An angle can't be zero, please enter non-zero value");
+    }
+    return 0;   
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the value of a:");
+    scanf("%d",&a);
+    printf("enter the value of b:");
+    scanf("%d",&b);
+    printf("the sum is: %d",a*b);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the value of first number:");
+    scanf("%d",&a);
+    printf("enter the value of second number:");
+    scanf("%d",&b);
+    printf("the sum is: %d \n",a+b);
+    printf("the defference is: %d \n",a-b);
+    printf("the product is: %d \n",a*b);
+    printf("the devisor is: %d \n",a/b);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the length:");
+    scanf("%d",&a);
+    printf("enter the breath:");
+    scanf("%d",&b);
+    printf("the perimeter is: %d",2*a+2*b);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("the length of rectangle:");
+    scanf("%d",&a);
+    printf("the breath of rectangle:");
+    scanf("%d",&b);
+    printf("the area is:%d",a*b);
+}
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the radius:");
+    scanf("%d",&a);
+    printf("the diameter is:%d \n",2*a);
+    printf("the circumference is:%f \n",2*3.14*a);
+    printf("the area is:%f \n",3.14*a*a);
+}
+
+#include <stdio.h>
+int main() {
+  float a;
+
+  printf("Enter a length in centimeters: ");
+  scanf("%f", &a);
+
+ 
+
+  printf("Length in meters: %f m\n", a/100);
+  printf("Length in kilometers: %f km\n", a/100000);
+
+  return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("enter the temperature in celcius:");
+    
+    scanf("%f",&a);
+   
+    printf("the temperature in Fahrenheit: %f",(a*9.0/5.0)+32);
+    return 0;  
+}
+
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("enter the temperature in Fahrenheit:");
+    
+    scanf("%f",&a);
+   
+    printf("the temperature in celcius: %f",5.0/9.0*(a-32.0));
+    return 0;  
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    //float a,b;
+    //scanf("%f%f",&a,&b);
+    //float c=a+b;
+    //printf("%f",c);
+    //
+    //return 0;
+    //float a,b;
+    //scanf("%f%f",&a,&b);
+    //float c=a-b;
+    //printf("%f",c);
+    //
+    //return 0;
+    //float a,b;
+    //scanf("%f%f",&a,&b);
+    //float c=a*b;
+    //printf("%f",c);
+    //
+    //return 0;
+    /*float a,b;
+    scanf("%f%f",&a,&b);
+    float c=a/b;
+    printf("%f",c);
+    
+    return 0;*/
+    /*float a;
+    scanf("%f",&a);
+    printf("in meters:%f",a/100);
+    printf("in kilometer:%f",a/1000);
+    
+    return 0;*/
+    /*float a;
+    scanf("in celesius%f",&a);
+    float f=(1.8*(a+32));
+    printf("in fahreneit %f",f);
+    
+    return 0;*/
+    /*float a;
+    scanf("in fahreneit %f",&a);
+    float c=(5/9*(a-32));
+    printf("%f",c);
+    
+    return 0;*/
+    
+    /*int a,b;
+    
+    printf("Enter value:\n");
+    scanf("%d",&a);
+    
+    printf("Enter value:\n");
+    scanf("%d",&b);
+    
+    printf("\nOutput:%d",180-(a+b));
+    
+    return 0;*/
+    
+    
+    /*int a,b,c,d,e;
+    
+    printf("Enter value:\n");
+    scanf("%d",&a);
+    
+    printf("Enter value:\n");
+    scanf("%d",&b);
+    printf("Enter value:\n");
+    scanf("%d",&c);
+    printf("Enter value:\n");
+    scanf("%d",&d);
+    printf("Enter value:\n");
+    scanf("%d",&e);
+    
+    printf("\nOutput:%f",(a+b+c+d+e)*0.2);
+    
+    return 0;*/
+    /*int a,b,c,d,e,f,g;
+    
+    printf("Enter value:\n");
+    scanf("%d",&a);
+    
+    printf("Enter value:\n");
+    scanf("%d",&b);
+    
+    printf("Enter value:\n");
+    scanf("%d",&c);
+    
+    d=1+b/100;
+    e=pow(b,c);
+    f=e*a;
+    g=f-a;
+    
+    printf("\nOutput:%d",g);
+    
+    return 0;*/
+
+[08:38, 2/15/2023] Krishna Agrawal: //maximum between two number using conditional operator
+include <stdio.h>
+ int main()
+ {
+     int a,b;
+     scanf("%d",&a);
+     scanf("%d",&b);
+    (a>b)?(printf("%d",a)):(printf("%d",b))>
+     return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    (a%2==0)?(printf("even")):(printf("odd"));
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    ((a%4==0) || (a%400==0))?(printf("leap year")):(printf("not leap year"));
+
+    return 0;
+}
+
+#include <stdio.h>
+ int main()
+ {
+     int a,b,c;
+     scanf("%d",&a);
+     scanf("%d",&b);
+     scanf("%d",&c);
+     ((a>b) && (a>c))?(printf("%d",a)):((b>a) && (b>c))?(printf("%d",b)):(printf("%d",c));
+     return 0;
+}
+
+#include <stdio.h>
+ int main()
+ {
+     char ch;
+     scanf("%c",&ch);
+     ((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))?(printf("alphabet")):(printf("not an alphabet"));
+     return 0;
+}
+
+[17:03, 2/15/2023] Kushal: #include<stdio.h>
+int main()
+{
+    float a;
+    printf("enter the number of days:");
+    scanf("%f",&a);
+    printf("the number of weeks are:%f weeks \n",a/7);
+    printf("the number of months are:%f months \n",a/30);
+    printf("the number of years are:%f years",a/365);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("enter the base:");
+    scanf("%f",&a);
+    printf("enter the power:");
+    scanf("%f",&b);
+    c=pow(a,b);
+    printf("the answer is:%f",c);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b;
+    
+    printf("enter the number:");
+    scanf("%f",&a);
+    if(a>0){
+    
+    b=sqrt(a);
+    printf("the square root of %f : %f ",a,b);
+    return 0;
+    }
+    else{
+    printf("The number is less than 0 ,please enter a number greater than 0.");
+    }
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the first angle in degree:");
+    scanf("%d",&a);
+    printf("Enter the second angle in degree:");
+    scanf("%d",&b);
+    if(a!=0,b!=0)
+    {
+    c=180-a-b;
+    printf("the value of third angle in degree:%d",c);
+    }
+    else{
+    printf("An angle can't be zero, please enter non-zero value");
+    }
+    return 0;   
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("enter the base of triangle:");
+    scanf("%f",&a);
+    printf("enter the height of triangle:");
+    scanf("%f",&b);
+    c=0.5*a*b;
+    printf("the area of triangle : %.2f sq.unit",c);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("enter the side of triangle:");
+    scanf("%f",&a);
+    b=pow(3,0.5);
+    c=a*a*b/4;
+    printf("the area of triangle : %.2f",c);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int x,a,b,c,d,e,f,g,h,i,j;
+    printf("enter the max marks of a subject :");
+    scanf("%d",&x);
+    printf("enter the marks in first subject :");
+    scanf("%d",&a);
+    printf("enter the marks in second subject :");
+    scanf("%d",&b);
+    printf("enter the marks in third subject :");
+    scanf("%d",&c);
+    printf("enter the marks in forth subject :");
+    scanf("%d",&d);
+    printf("enter the marks in fifth subject :");
+    scanf("%d",&e);
+    f=a+b+c+d+e;
+    g=f/5;
+    h=x*5;
+    j=h/100;
+    i=f/j;
+    printf("the total marks : %d marks \n",f);
+    printf("the average marks : %d marks \n",g);
+    printf("the percentage of your marks : %d", "%",i);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int p,r,t,a;
+    printf("enter the principle : ");
+    scanf("%d",&p);
+    printf("enter rate : ");
+    scanf("%d",&r);
+    printf("enter time : ");
+    scanf("%d",&t);
+    a=(p*r*t)/100;
+    printf("the simple intrest : %d" ,a);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    float a,b,c,d,e,p,r,t,i;
+    printf("enter principle : ");
+    scanf("%f",&p);
+    printf("enter rate : ");
+    scanf("%f",&r);
+    printf("enter time : ");
+    scanf("%f",&t);
+    b=1+r/100;
+    c=pow(b,t);
+    d=c*p;
+    i=d-p;
+    printf("the amount : %f \n",d);
+    printf("the compound intrest : %f",i);
+    return 0;
+}
+
+#include <stdio.h>
+//number from 1 to n
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     int i=1;
+//     while(i<=n){
+//         printf("%d\n",i);
+//         i++;
+//     }
+    
+
+//     return 0;
+// }
+
+
+// to print n to 1
+// int main()
+// {
+//      int n;
+//      scanf("%d", &n);
+//      int i=1;
+//      while(i<=n){
+//         printf("%d\n",n);
+//         n--;
+//      }
+//  return 0;
+// }
+
+// int main(){
+//     char a;
+//     while('a'>a || 'z'<a){
+//         printf("%c",a);
+//         a++;
+//     }
+// }
+
+
+//to print even from 1 to 100
+// int main()
+// {
+//      int i=1;
+//      while(i<=100){
+//          if(i%2==0){
+//             printf("%d\n",i);
+//         }
+//             i++;
+//      }
+//  return 0;
+// }
+
+
+
+
+//to print odd from 1 to 100
+// int main()
+// {
+//      int i=1;
+//      while(i<=100){
+//          if(i%2!=0){
+//             printf("%d\n",i);
+//         }
+//             i++;
+//      }
+//  return 0;
+// }
+
+#include<stdio.h>
+int main()
+#for reverse
+{
+	int a,b,s=0,x;
+	scanf("%d",&a);
+	x=a;
+	while(a>0)
+	{
+		b=a%10;
+		s=(s*10)+b;
+		a=a/10;
+		
+	}
+	printf("%d",s);
+}
+
+# for pallindrome
+
+{
+	int a,b,s=0,x;
+	scanf("%d",&a);
+	x=a;
+	while(a>0)
+	{
+		b=a%10;
+		s=(s*10)+b;
+		a=a/10;
+		
+	}
+	
+	if(x==s)
+	{
+		printf("Pallindrome.");
+	}
+	else{
+		printf("Not in Pallindrome.");
+	}
+}
+
+
+
+# for factorial
+{
+    int i=1,n,m;
+	scanf("%d",&n);
+	while(n>=1)
+	{
+		i=i*n;
+		n--;
+		
+		
+}
+printf("%d",i);
+		
+		
+
+}
+{
+	int n,i=1;
+	scanf("%d",&n);
+	
+	
+	for(i=1;i<=n;i++)
+	{
+	if(n%i==0)
+	{
+		printf("%d \n",i);
+		}	
+	}
+
+}
+
+
+
+
+# for fabbonacci series
+{
+	int i=0,j=1,k,n;
+	scanf("%d",&n);
+	printf("%d %d ",i,j);
+	while(i<=(n-2))
+	{
+		k=i+j;
+		i=j;
+		j=k;
+		printf("%d ",k);
+	}
+}
+
+//to print sum
+// int main()
+// {
+//      int n,s=0;
+//      scanf("%d",&n);
+//      int i=0;
+//      while(i<=n){
+//       s=s+i;
+//       i++;
+//      }
+//       printf("%d",s);
+//  return 0;
+// }
+
+
+
+//to print even number sum
+// int main()
+// {
+//      int i=1,s=0,n;
+//      scanf("%d",&n);
+//      while(i<=n){
+//          if(i%2==0){
+//          s=s+i;  
+//         }
+//             i++;
+//      }
+//      printf("%d\n",s);
+//  return 0;
+// }
+
+
+
+//to print odd number sum
+// int main()
+// {
+//      int i=1,s=0,n;
+//      scanf("%d",&n);
+//      while(i<=n){
+//          if(i%2!=0){
+//          s=s+i;  
+//         }
+//             i++;
+//      }
+//      printf("%d\n",s);
+//  return 0;
+// }
+
+//to print product of n number
+// int main()
+// {
+//      int i=1,p=1,n;
+//      scanf("%d",&n);
+//      while(i<=n){
+//             p=p*i;
+//             i++;
+//      }
+//      printf("%d\n",p);
+//  return 0;
+// }
+
+
+//to print pattern 
+// int main()
+// {
+//      int i=1,n;
+//      scanf("%d",&n);
+//      while(i<=10){
+//         n=n*i;
+//         printf("%d\n",n);
+//         i++;
+       
+//      }
+     
+//  return 0;
+// }
+
+
+
+//to print multiplacation table
+// int main()
+// {
+//      int i=1,n,s;
+//      scanf("%d",&n);
+//      while(i<=10){
+//         s=n*i;
+//         printf("%d\n",s);
+//         i++;
+       
+//      }
+     
+//  return 0;
+// }
+
+
+
+#include <stdio.h>
+// factorial
+// int main()
+// {
+//     int i=1,n,k;
+//     scanf("%d",&n);
+//     while(1<=n){
+//         i=i*n;
+        
+//         n--;
+//     }
+//     printf("%d",i);
+
+//     return 0;
+// }
+
+
+//factor
+// int main(){
+//     int i=1,n;
+//     scanf("%d",&n);
+//     while(i<=n){
+//       if(n%i==0){
+//           printf("%d\n",i);
+//       } 
+//       i++;
+//     }
+// }
+
+// fabonnaci
+// int main(){
+//     int i=0;
+//     int j=1;
+//     int k,n;
+//     scanf("%d",&n);
+//     printf("%d\n%d\n",i,j);
+//     while(i<=(n-1)){
+//         k=j+i;
+//         i=j;
+//         j=k;
+//         printf("%d\n",k);
+//     }
+//}
+    
+//LCM
+int main(){
+    int i;
+    int n,m;
+    scanf("%d",&n);
+    scanf("%d",&m);
+    if(n>m){
+        i=n;
+    }
+    else{
+        i=m;
+    }
+    while(i<=(n*m)){
+        if((i%n==0) && (i%m==0)){
+            break;}
+            i++;
+        }
+             printf("%d",i);
+}
+
+//insert value
+// #include <stdio.h>
+// int main()
+// {
+    // int n,m,pos,el,i;
+    // printf("enter size");
+    // scanf("%d%d",&n,&m);
+    // int ar[n];
+    //  printf("enter element");
+    //     scanf("%d%d",&pos,&el);
+    // if(m>n){
+    //     printf("insertion is not possible");
+    // }
+    // else{
+    //     printf("enter values");
+    //     for(i=0;i<m;i++){
+    //     scanf("%d",&ar[i]);
+    //     }
+    //     for(i=m-1;i>=pos;i--){
+    //         ar[i+1]=ar[i];
+    //     }
+    // }
+    // ar[pos]=el;
+    
+    // for(i=0;i<m;i++){
+    //     printf("%d\n",ar[i]);
+    // }
+
+    // return 0;
+// }
+
+
+
+
+// second largest maximum
+// #include<stdio.h>
+
+// int main(){
+//             int n,m,i,y;
+//     printf("enter size");
+//     scanf("%d",&n);
+//     int ar[n];
+//      printf("enter values");
+//      for(i=0;i<n;i++){
+//         scanf("%d",&ar[i]);  
+// }
+// m=ar[0];
+// y=ar[0];
+// for(i=0;i<n;i++){
+//     if(m<ar[i]){
+//         m=ar[i];
+//     }
+// }
+// for(i=0;i<n;i++){
+//     if(y<ar[i] && m!=ar[i]){
+//         y=ar[i];
+//     }
+// }
+// printf("%d%d",m,y);
+//     return 0;
+// }
+
+#include<stdio.h>
+int main(){
+    int n,m,e=0,s=0;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(i==j){
+                e=e+a[i][j];
+            }
+            else{
+                s=s+a[i][j];
+            }
+         printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("%d\n%d",e,s);
+}
+
+//sum of two matrices
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],b[n][m],c[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&b[i][j]);
+        }
+    }
+    
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            c[i][j]=a[i][j]+b[i][j];        
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            printf("%d",c[i][j]);
+        }
+        printf("\n");
+    }
+    
+}
+
+//max of 2d matrices
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],b[n][m],c[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    int max=a[0][j];
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(max<a[i][j]){
+                max=a[i][j];
+            }
+        }
+    }
+    
+    printf("%d",max);
+}
+
+//min of 2d matrices
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],b[n][m],c[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    int min=a[0][j];
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(min>a[i][j]){
+                min=a[i][j];
+            }
+        }
+    }
+    
+    printf("%d",min);
+}
+
+
+// to print 2d array
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],i,j;
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//          printf("%d",a[i][j]);
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+// transpose of 2d array
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],i,j;
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//          printf("%d",a[j][i]);
+//         }
+//         printf("\n");
+//     }
+// }
+
+
+
+
+//to print sum of 2d array
+// #include<stdio.h>
+// int main(){
+//     int n,m,s=0;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],i,j;
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//          s += a[i][j];
+//         }
+        
+//     }
+//     printf("%d",s);
+// }
+
+
+// sum of two matrices with the help of third matrices
+
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],b[n][m],c[n][m],i,j;
+//      printf("enter elements of 1 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     printf("enter elements of 2 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&b[i][j]);
+//         }
+//     }
+    
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             c[i][j]=a[i][j]+b[i][j];        
+//         }
+//     }
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             printf("%d ",c[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+
+
+
+
+//  //sum of two matrices without  help of third matrices
+
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],b[n][m],i,j;
+//      printf("enter elements of 1 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     printf("enter elements of 2 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&b[i][j]);
+//         }
+//     }
+    
+    
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             printf("%d ",a[i][j]+b[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+
+
+ //subtract of two matrices without  help of third matrices
+
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],b[n][m],i,j;
+//      printf("enter elements of 1 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     printf("enter elements of 2 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&b[i][j]);
+//         }
+//     }
+    
+    
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             printf("%d ",a[i][j]-b[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+// to print scalar multiplacation 2d array
+// #include<stdio.h>
+// int main(){
+//     int n,m,k;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+    
+//     printf("enter real number");
+//     scanf("%d",&k);
+    
+//     int a[n][m],i,j;
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//          printf("%d ",(k*a[i][j]));
+//         }
+//         printf("\n");
+//     }
+// }
+
+// to print scalar multiplacation 2d array
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],b[n][m],c[n][m],i,j;
+//      printf("enter elements of 1 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     printf("enter elements of 2 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&b[i][j]);
+//         }
+//     }
+    
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             c[i][j]=a[i][j]+b[i][j];        
+//         }
+//     }
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             printf("%d ",c[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+// }
+
+
+
+
+
+
+ //to check two matrices are equal matrices or not
+
+// #include<stdio.h>
+// int main(){
+//     int n,m,z=0;
+//     printf("enter row");
+//     scanf("%d",&n);
+    
+//     printf("enter col");
+//     scanf("%d",&m);
+//     int a[n][m],b[n][m],i,j;
+//      printf("enter elements of 1 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&a[i][j]);
+//         }
+//     }
+//     printf("enter elements of 2 matrix");
+//     for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             scanf("%d",&b[i][j]);
+//         }
+//     }
+    
+//      for(i=0;i<n;i++){
+//         for(j=0;j<m;j++){
+//             if(a[i][j] == b[i][j]){
+//                 z++;
+//             }
+//         }
+//     }
+//             if(z==(n*m)){
+//                 printf("matrices are equal");
+//             }
+//             else{
+//                 printf("not equal matrices");
+//             }
+    
+// }
+
+
+//upper triangular matrix
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(i>j){
+                a[i][j] = 0;
+            }
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+         printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+//lower triangular matrix
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(i<j){
+                a[i][j] = 0;
+            }
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+         printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+//sum of lower triangular matrix
+#include<stdio.h>
+int main(){
+    int n,m,s=0;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(i<j){
+                a[i][j] = 0;
+            }
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+         s += a[i][j];
+        }
+    
+    }
+    printf("%d",s);
+}
+
+//sum of upper triangular matrix
+#include<stdio.h>
+int main(){
+    int n,m,s=0;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(i>j){
+                a[i][j] = 0;
+            }
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+         s += a[i][j];
+        }
+    
+    }
+    printf("%d",s);
+}
+
+//to check matrix is symmetric matrix or not
+#include<stdio.h>
+int main(){
+    int n,m,z=0;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(a[i][j] == a[j][i]){
+                z++;
+            }
+        }
+    }
+    if(z == n*m){
+    printf("symmetric matrix");
+    }
+    else{
+        printf("not a symmetric matrix");
+    }
+}
+
+//to check matrix is sparse matrix or not
+#include<stdio.h>
+int main(){
+    int n,m,z=0,y=0;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(a[i][j] == 0){
+                z++;
+            }
+            else{
+                y++;
+            }
+        }
+    }
+    if(z>y){
+    printf("sparse matrix");
+    }
+    else{
+        printf("not a sparse matrix");
+    }
+}
+
+//cube of number
+#include <stdio.h>
+int cube(int a){
+    return(a*a*a);
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    k =  cube(a);
+    printf("%d",k);
+    return 0;
+}
+
+//circle of number
+#include <stdio.h>
+float diameter(int a){
+    return(a/2);
+}
+float circumfrance(int a){
+    return(2*3.14*a);
+}
+float area(int a){
+    return(3.14*a*a);
+}
+float main()
+{
+    
+    float a,d,c,k;
+    scanf("%f",&a);
+    k =  diameter(a);
+    c = circumfrance(a);
+    d = area(a);
+    printf("%f %f %f",k,c,d);
+    return 0;
+}
+
+//check even or odd number
+#include <stdio.h>
+int check(int a){
+    if(a%2 == 0){
+        printf("even");
+    }
+    else{
+        printf("odd");
+    }
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    check(a);
+    return 0;
+}
+
+// to find max and min
+#include <stdio.h>
+int find(int a,int b){
+    if(a>b){
+        printf("the maximum is %d\n",a);
+        printf("the minimum is %d\n",b);
+    }
+    else{
+        printf("the maximum is %d\n",b);
+        printf("the minimum is %d\n",a);
+    }
+}
+void main()
+{
+    
+    int a,b;
+    scanf("%d%d",&a,&b);
+    find(a,b);
+    return ;
+}
+
+//power of number
+#include <stdio.h>
+#include<math.h>
+int power(int a,int b){
+    int k;
+    k=pow(a,b);
+    return k ;
+}
+int main()
+{
+    
+    int a,k,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",power(a,b));
+    return 0;
+}
+
+//two print natural number till n
+#include <stdio.h>
+#include<math.h>
+int natural(int a){
+    int i;
+    for(i=1;i<=a;i++){
+        printf("%d\n",i);
+    }
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    natural(a);
+    return 0;
+}
+
+
+#include <stdio.h>
+ #include<math.h>
+ int sum(int,int);
+ void armstrong(int);
+ void prime(int);
+ void table(int);
+ int sum(int x,int y){
+     return(x+y);
+ }
+     void armstrong(int arm)
+    {
+     int n,rem,result=0;
+     n=log(arm)+1;
+     for(arm;arm!=0;arm=arm/10){
+         rem=arm%10;
+         result+=pow(rem,n);
+        } 
+     if(arm==result){
+         printf("no is armstrong");
+        }
+     else{
+         printf("no is not armstrong");
+         }
+    }
+    void prime(int a){
+    int ls=1,z;
+    for(ls;ls<=a;ls++){
+     if((a%ls)==0){
+         z++;
+        }   
+    }
+    if(z>=2){
+        printf("no is prime");
+    }
+    else{
+        printf("the no is not prime" );
+    }
+}
+void table(int a){
+    for(int i=1;i<=10;i++){
+        printf("%d\n",i*a);
+    }
+}
+
+ int main(){
+     int a,k,result;
+     printf("1 for sum\n");
+     printf("2 for armstrong\n");
+     printf("3 for table\n");
+     printf("4 for table\n");
+     printf("enter value for switch\n");
+     scanf("%d",&a);
+ switch(a){
+     case 1:
+     int no1;
+     int no2;
+     printf("enter value for add\n");
+     scanf("%d",&no1);
+     scanf("%d",&no2);
+     k=sum(no1,no2);
+     printf("%d sum of two no is\n",k); 
+     break;
+    case 2:
+    int arm;
+    printf("enter no for checking of armstrong\n");
+    scanf("%d",&arm);
+    armstrong(arm);
+    break;
+    case 3:
+    int prm;
+    printf("enter no for checking that it si prime or not\n");
+    scanf("%d",&prm);
+    prime(prm);
+    break;
+    case 4:
+    int no;
+    printf("enter no to print its table\n");
+    scanf("%d",&no);
+    table(no);
+    break;
+    default:
+    printf("enter valid no\n");
+    }
+ }
+ 
+ 
+//even and odd number
+#include <stdio.h>
+#include<math.h>
+int even(int a){
+    int i;
+    for(i=0;i<=a;i++){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+    }
+}
+int odd(int a){
+    int i;
+    for(i=0;i<=a;i++){
+        if(i%2!=0){
+            printf("%d\n",i);
+        }
+    }
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    printf("the even numbers are:");
+    even(a);
+    
+    printf("the odd numbers are:");
+    odd(a);
+    return 0;
+}
+
+//sum of natural number
+#include <stdio.h>
+#include<math.h>
+int sum(int a){
+    int i,s=0;
+    for(i=1;i<=a;i++){
+        s += i ;
+    }
+    printf("%d",s);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    printf("the sum of numbers are:");
+    sum(a);
+    return 0;
+}
+
+//sum of even and odd number
+#include <stdio.h>
+#include<math.h>
+int even(int a){
+    int i,e=0;
+    for(i=0;i<=a;i++){
+        if(i%2==0){
+            e += i;
+        }
+    }
+    printf("%d",e);
+}
+int odd(int a){
+    int i,o=0;
+    for(i=0;i<=a;i++){
+        if(i%2!=0){
+            o +=i;
+        }
+    }
+    printf("%d",o);
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    printf("the sum of even numbers are:");
+    even(a);
+    printf("\n");
+    printf("the sum of odd numbers are:");
+    odd(a);
+    return 0;
+}
+
+//reverse of number
+#include <stdio.h>
+#include<math.h>
+int rev(int a){
+    int i;
+    for(i=a;i>=0;i--){
+        printf("%d\n",i);
+
+    }
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    printf("the rev of numbers are:");
+    rev(a);
+    return 0;
+}
+
+//pallindrome of number
+#include <stdio.h>
+#include<math.h>
+int pal(int a){
+    int rev=0,x=a; 
+    while(a>0){
+        rev=(rev*10)+(a%10);
+        a /= 10;
+    }
+    if(x==rev){
+        printf("pallindrome");
+    }
+    else{
+        printf("not a pallindrome");
+    }
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    pal(a);
+    return 0;
+}
+
+//sum of digit of number
+#include <stdio.h>
+#include<math.h>
+int dig(int a){
+    int rev=0,x=a; 
+    while(a>0){
+        rev=(rev)+(a%10);
+        a /= 10;
+    }
+    printf("%d",rev);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    dig(a);
+    return 0;
+}
+
+//factorial of number
+#include <stdio.h>
+#include<math.h>
+int fac(int a){
+    int i,f=1; 
+    for(i=1;i<=a;i++){
+        f=f*i;
+    }
+    printf("%d",f);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    fac(a);
+    return 0;
+}
+
+//fabonacci of number
+#include <stdio.h>
+#include<math.h>
+int fab(int a){
+
+	int n=0,i=0,j=1,k;
+	printf("%d %d ",i,j);
+	while(n<=(a-3))
+	{
+		k=i+j;
+		i=j;
+		j=k;
+		printf("%d ",k);
+		n++;
+	}
+
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    fab(a);
+    return 0;
+}
+
+//LCM of number
+#include <stdio.h>
+#include<math.h>
+int lcm(int a,int b){
+    int i;
+    if(a>b){
+        i=a;
+    }
+    else{
+        i=b;
+    }
+    while(i<=(a*b)){
+        if((i%a==0) && (i%b==0)){
+            break;
+            
+        }
+            i++;
+        }
+             printf("%d",i);
+       
+    
+}
+int main()
+{
+    
+    int a,b;
+    scanf("%d%d",&a,&b);
+    lcm(a,b);
+    return 0;
+}
+
+//hcf of number
+#include <stdio.h>
+#include<math.h>
+int hcf(int a,int b){
+    int i,hcf;
+    if(a>b){
+        i=a;
+    }
+    else{
+        i=b;
+    }
+    while(i<=(a*b)){
+        if((i%a==0) && (i%b==0)){
+            break;
+            
+        }
+            i++;
+        }
+        hcf = (a*b)/i;
+       printf("%d",hcf);
+    
+}
+int main()
+{
+    
+    int a,b;
+    scanf("%d%d",&a,&b);
+    hcf(a,b);
+    return 0;
+}
+
+//to diplay element  of array
+#include <stdio.h>
+#include<math.h>
+int array(int a){
+    int arr[a],i=0;
+    for(i=0;i<=a;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<=a;i++){
+        printf("%d ",arr[i]);
+    }
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    array(a);
+    return 0;
+}
+
+//to sum the element  of array
+#include <stdio.h>
+#include<math.h>
+int sarray(int a){
+    int arr[a],i,s=0;
+    for(i=0;i<=a;i++){
+        scanf("%d",&arr[i]);
+        s += arr[i];
+    }
+        printf("%d ",s);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    sarray(a);
+    return 0;
+}
+
+//to find max and min element of array
+#include <stdio.h>
+#include<math.h>
+int mxmn(int a){
+    int arr[a],i;
+    for(i=0;i<=a;i++){
+        scanf("%d",&arr[i]);
+    }
+    int max = arr[0];
+    for(i=0;i<=a;i++){
+        if(max<arr[i]){
+            max=arr[i];
+        }
+    }
+    int min = arr[0];
+    for(i=0;i<=a;i++){
+        if(min>arr[i]){
+            min=arr[i];
+        }
+    }
+    printf("the max element of array %d\n",max);
+    printf("the min element of array %d",min);
+}
+
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    mxmn(a);
+    return 0;
+}
+
+// print prime number in given range
+#include<stdio.h>
+int prime(int s,int e){
+    int k,i,j;
+    for(i=s;i<=e;i++){
+        k=0;
+        for(j=1;j<=i;j++){
+            if(i%j==0){
+              k+=1;
+            }
+        }
+        if(k==2){
+            printf("%d\n",i);
+        }
+    }
+}
+int main(){
+    int s,e;
+    printf("enter limits to check");
+    scanf("%d",&s);
+    scanf("%d",&e);
+    prime(s,e);
+    return 0;
+}
+
+// to check armstrong number
+#include <stdio.h>
+#include<math.h>
+int arm(int a){
+    
+        int b,c,i,rev=0,x=a;
+        b=log10(a)+1;
+        for(i=0;a>0;i++){
+            rev=rev+pow(a%10,b);
+            a /= 10;
+        }
+        if(x==rev){
+            printf("armstrong");
+        }
+        else{
+            printf("not");
+        }
+    
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    arm(a);
+    return 0;
+}
+
+//to check the number is prime number or not
+#include <stdio.h>
+int prime(int a){
+    int i=1,c;
+    for(i;i<=a;i++){
+     if((a%i)==0){
+         c++;
+        }   
+    }
+    if(c==2){
+        printf("no is prime");
+    }
+    else{
+        printf(" no is not prime" );
+    }
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    prime(a);
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n,m,ch;
+    scanf("%d",&n);
+    scanf("%d",&m);
+    int a[n][m];
+    if(n!=m){
+        printf("not possible");
+    }
+    else{
+        for(i=0;i<n;i++){
+            for(j=0;j<m;j++){
+                scanf("%d",&a[i][j]);   
+            }
+        }
+        
+        for(i=0;i<n;i++){
+            for(j=0;j<m;j++){
+                printf("%d",a[i][j]);
+            }
+            printf("\n");
+        }
+        
+        for(i=0;i<n;i++){
+                ch = a[i][i];
+                a[i][i] = a[i][n-i-1];
+                a[i][n-i-1] = ch;
+        }
+        
+        for(i=0;i<n;i++){
+            for(j=0;j<m;j++){
+                printf("%d",a[i][j]);
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
+
