@@ -2104,3 +2104,405 @@ int main()
     return 0;
 }
 
+
+// string length
+// #include <stdio.h>
+
+// int main()
+// {
+//     char a[100];
+//     int k;
+//     gets(a);
+//     k=printf("%s",a);
+//     printf("%d",k);
+
+//     return 0;
+// }
+
+
+// to copy one string to another
+// #include <stdio.h>
+
+// int main()
+// {
+//     char a[100],b[100];
+//     int k,i;
+//     gets(a);
+//     for(i=0;a[i];i++){
+//         b[i] = a[i];
+//     }
+//     k=printf("%s\n",b);
+//     printf("%d",k);
+
+//     return 0;
+// }
+
+// to concenate a string
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100],b[100];
+//     int k;
+//     gets(a);
+//     gets(b);
+//     strcat(a,b);
+//     k=printf("%s\n",a);
+//     printf("%d",k);
+
+//     return 0;
+// }
+
+//to compare string
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100],b[100];
+//     int k,i,count;
+//     gets(a);
+//     gets(b);
+//     k=strlen(a);
+//     for(i=0;a[i];i++){
+//         if(a[i] == b[i]){
+//             count++;
+//         }
+//     }
+//     if(count == k){
+//         printf("equal");
+//     }
+//     else{
+//         printf("not equal");
+//     }
+
+//     return 0;
+// }
+
+//to convert lowercase to uppercase
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100];
+//     int k,i;
+//     gets(a);
+//     k=strlen(a);
+//     for(i=0;i<=k;i++){
+//       a[i] = a[i]-32;
+//     }
+//     printf("%s",a);
+
+//     return 0;
+// }
+
+
+
+
+// example of strupr() function.
+// #include<stdio.h>
+// #include<string.h>
+
+// int main()
+// {
+// 	char str[ ] = "geeksforgeeks is the best";
+// 	printf("%s\n", strupr (str));
+// 	return 0;
+// }
+
+//to convert in toggle case
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100];
+//     int k,i;
+//     gets(a);
+//     k=strlen(a);
+//     for(i=0;a[i];i++){
+//         if(a[i] >= 'a' && a[i] <= 'z') {
+//             a[i] = a[i] - 32;
+//         }
+//         else if(a[i] >= 'A' && a[i] <= 'Z'){
+//             a[i] = a[i]+32;
+//         }
+//     }
+//     printf("%s",a);
+
+//     return 0;
+// }
+
+
+
+//to find digit,al,special
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100];
+//     int k,i,al,s,n;
+//     gets(a);
+//     k=strlen(a);
+//     for(i=0;a[i];i++){
+//         if((a[i] >= 'A' && a[i] <= 'Z') || (a[i] >= 'a' && a[i] <= 'z')){
+//             al++;
+//         }
+//         else if(a[i] >= '0' && a[i] <= '9'){
+//             n++;
+//         }
+//         else{
+//             s++;
+//         }
+//     }
+//     printf("%d  %d  %d",al,n,s);
+
+//     return 0;
+// }
+
+//to find total number of words
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100];
+//     int k,i,w;
+//     gets(a);
+//     k=strlen(a);
+//     for(i=0;a[i];i++){
+//         if((a[i] == ' ') && (isalpha(a[i+1])) && (i>0)){
+//             w++;
+//         }
+//     }
+//     printf("%d",w+1);
+
+//     return 0;
+// }
+
+// to reverse of string
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100],b[100];
+//     int k,i,l,j;
+//     gets(a);
+//     k=strlen(a);
+//     for(i=k-1,j=0;a[i];i--,j++){
+//         b[j]=a[i];
+//     }
+//     l=strlen(b);
+//     printf("%s\n",b);
+//     printf("%d\n",k);
+//     printf("%d",l);
+    
+
+//     return 0;
+// }
+
+//to check pallindrome
+// #include <stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char a[100],b[100];
+//     int k,i,p=0,j;
+//     gets(a);
+//     k=strlen(a);
+//     for(i=k-1,j=0;a[i];i--,j++){
+//         b[j]=a[i];
+//     }
+//     for(i=0;a[i];i++){
+//         if(a[i] == b[i]){
+//             p++;
+//         }
+//     }
+//     if(p ==k){
+//         printf("pallindrome");
+//     }
+//     else{
+//         printf("not pallindrome");
+//     }
+//     return 0;
+// }
+
+
+// to print first occurance
+// #include <stdio.h>
+// #include <string.h>
+ 
+// int main()
+// {
+//   	char a[100], ch;
+//   	int i, c;
+//   	c = 0;
+ 
+//   	gets(a);
+  	
+
+//   	scanf("%c", &ch);
+  	
+//   	for(i = 0; i <= strlen(a); i++)
+//   	{
+//   		if(a[i] == ch)  
+// 		{
+//   			c++;
+// 			break;    	
+//  		}
+// 	}
+//     if(c == 0)
+//   	{
+//   		printf("\n Sorry '%c' ", ch);
+// 	}
+// 	else
+// 	{
+// 		printf(" '%c' at  %d ", ch, i + 1);
+// 	}	
+//   	return 0;
+// }
+
+
+//to find all occurance
+// #include <stdio.h>
+// #include <string.h>
+ 
+// int main()
+// {
+//   	char a[100], ch;
+//   	int i, c;
+//   	c = 0;
+ 
+//   	gets(a);
+  	
+
+//   	scanf("%c", &ch);
+  	
+//   	for(i = 0; i <= strlen(a); i++)
+//   	{
+//   		if(a[i] == ch)  
+// 		{
+//   			printf(" '%c' at  %d\n", ch, i + 1);  	
+//  		}
+// 	}
+  
+//   	return 0;
+// }
+
+
+//to find last occurance
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+//     char a[100],c;  
+//     int i,n,k=0;
+//     gets(a);
+//     scanf("%c",&c);
+//     for(i=strlen(a)-1;i>=0;i--)  
+//     {
+//     	if(a[i]==c)
+//     	{
+// 		  k++;
+//     	  break;
+// 		}
+//  	}
+//     if(k)
+//  	    printf("%c  is last at %d ",c,i);
+//     else
+//         printf("not found");
+//     return 0;
+// }
+
+//to count all occurance
+// #include <stdio.h>
+// #include <string.h>
+ 
+// int main()
+// {
+//   	char a[100], ch;
+//   	int i, c=0;
+//   	gets(a);
+//   	scanf("%c", &ch);
+  	
+//   	for(i = 0; i <= strlen(a); i++)
+//   	{
+//   		if(a[i] == ch)  
+// 		{
+//   			c++;  	
+//  		}
+// 	}
+//     printf("%d",c);
+//   	return 0;
+
+
+
+//to find the high frequency character
+// #include<stdio.h>
+// int main()
+// {
+ 
+//     char a[1000];
+//     int i, highFreq = 0, ch = 0;
+ 
+//     char frequency[256] = {0};
+ 
+//     gets(a);
+ 
+//     for(i = 0; a[i]; i++)
+//     {
+//         frequency[a[i]]++;
+//     }
+    
+//     for(i = 0; i<256; i++)
+//     {
+//         if(frequency[i] != 0)
+//         {
+//             printf("Character : '%c' - Frequency: %d\n", i, frequency[i]);
+            
+//             if(highFreq < frequency[i])
+//             {
+//                 highFreq = frequency[i];
+//                 ch = i;
+//             }
+//         }
+//     }
+ 
+//     printf("Character '%c' is the High Frequency Character(Frequency: %d) in the given string\n", ch, highFreq);
+ 
+//     return 0;
+// }
+
+
+//to find the lowest frequency character and count occurances
+// #include<stdio.h>
+// int main()
+// {
+ 
+//     char a[100];
+//     int i, lowFreq = 100, ch = 0;
+    
+//     char frequency[256] = {0};
+ 
+//     gets(a);
+ 
+//     for(i = 0; a[i]; i++)
+//     {
+//         frequency[a[i]]++;
+//     }
+    
+//     for(i = 0; i<256; i++)
+//     {
+//         if(frequency[i] != 0)
+//         {
+//             printf("Character : '%c' - Frequency: %d\n", i, frequency[i]);
+            
+//             if(lowFreq > frequency[i])
+//             {
+//                 lowFreq = frequency[i];
+//                 ch = i;
+//             }
+//         }
+//     }
+ 
+//     printf("Character '%c' is the low Frequency Character(Frequency: %d) in the given string\n", ch, highFreq);
+ 
+//     return 0;
+ }
